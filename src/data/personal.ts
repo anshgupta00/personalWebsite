@@ -4,7 +4,7 @@ export const personal = {
   name: 'Shyam Krishna Gupta',
   nameShort: 'Shyam',
   tagline: 'I build, teach, experiment, and occasionally write about technology.',
-  roles: ['Computer Engineer', 'AI/ML', 'Product Builder', 'Educator'],
+  roles: ['Tech Entrepreneur', 'Computer Engineer', 'Startup Founder', 'AI/ML Educator'],
   location: 'Kathmandu, Nepal',
   status: 'Currently building & learning',
   email: 'gupansh430@gmail.com',

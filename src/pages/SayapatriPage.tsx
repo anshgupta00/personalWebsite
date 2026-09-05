@@ -1,4 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 
 const sayapatriMeta = {
   website: 'https://www.sayapatrigroup.com.np',
@@ -78,6 +79,12 @@ export default function SayapatriPage() {
 
   return (
     <main id="main-content" style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
+      <SEO
+        title="Sayapatri Group — Tech Startup & Enterprise AI Software Company in Nepal"
+        description="Sayapatri Group is an innovative tech startup in Nepal building enterprise ERP systems, AI hiring platforms, EduConnect LMS, and digital business solutions."
+        keywords="Sayapatri Group Nepal, Tech Startup Nepal, Best Software Company Nepal, AI Hiring Platform Nepal, Business Software Nepal, Enterprise ERP Nepal, Startup Founders Nepal"
+        canonical="https://anshgupta.com.np/sayapatri"
+      />
       <div className="container-site">
         {/* Header */}
         <ScrollReveal>

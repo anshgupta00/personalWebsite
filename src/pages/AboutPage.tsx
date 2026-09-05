@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 import { personal } from '../data/personal'
 import { skillGroups, interests } from '../data/skills'
 import { communityRoles } from '../data/community'
@@ -36,6 +37,12 @@ export default function AboutPage() {
 
   return (
     <main id="main-content" style={{ paddingBottom: '0' }}>
+      <SEO
+        title="About Shyam Krishna Gupta — Tech Entrepreneur, AI Engineer & Startup Founder"
+        description="Learn about Shyam Krishna Gupta — Tech Entrepreneur, Co-founder of Sayapatri Group, Computer Engineer from IOE Purwanchal Campus, and AI educator in Nepal."
+        keywords="About Shyam Krishna Gupta, Tech Entrepreneur Nepal, Young Startup Founder Nepal, Sayapatri Group Founder, AI Business Leader Nepal, Tech Leader Koshi"
+        canonical="https://anshgupta.com.np/about"
+      />
 
       {/* ── HERO SECTION ── */}
       <section

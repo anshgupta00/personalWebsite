@@ -1,4 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 import { personal } from '../data/personal'
 
 interface ContactMethod {
@@ -71,6 +72,12 @@ const contactMethods: ContactMethod[] = [
 export default function ContactPage() {
   return (
     <main id="main-content" style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
+      <SEO
+        title="Contact Shyam Krishna Gupta — Hire AI Engineer & Software Consultant Nepal"
+        description="Get in touch with Shyam Krishna Gupta for AI engineering roles, custom software projects, Sayapatri Group partnerships, and tech training in Nepal."
+        keywords="Hire Shyam Krishna Gupta, Contact AI Developer Nepal, Software Consultant Nepal, Sayapatri Contact"
+        canonical="https://anshgupta.com.np/contact"
+      />
       <div className="container-site">
         {/* Header ; confident ending */}
         <ScrollReveal>

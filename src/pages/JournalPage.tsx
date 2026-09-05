@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 import { journalPosts, journalCategories, type JournalCategory } from '../data/journal'
 
 function formatDate(iso: string) {
@@ -21,11 +22,17 @@ export default function JournalPage() {
     setTimeout(() => {
       setActiveCategory(cat)
       setAnimating(false)
-    }, 220)
+    }, 150)
   }
 
   return (
     <main id="main-content" style={{ paddingTop: '8rem', paddingBottom: '6rem' }}>
+      <SEO
+        title="Journal & Tech Articles — Shyam Krishna Gupta | AI & Software Insights"
+        description="Technical essays, AI tutorials, deep learning guides, software architecture principles, and technology commentary by Shyam Krishna Gupta in Nepal."
+        keywords="Shyam Krishna Gupta Blog, AI Articles Nepal, Software Engineering Essays Nepal, Deep Learning Tutorials Nepal"
+        canonical="https://anshgupta.com.np/journal"
+      />
       <div className="container-site">
         <ScrollReveal>
           <p className="text-label" style={{ marginBottom: '1.5rem' }}>Journal</p>

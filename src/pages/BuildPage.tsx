@@ -1,4 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 import { projects } from '../data/projects'
 import SayapatriSection from '../sections/SayapatriSection'
 
@@ -7,6 +8,12 @@ export default function BuildPage() {
 
   return (
     <main id="main-content" style={{ paddingTop: '8rem', paddingBottom: '6rem' }}>
+      <SEO
+        title="Projects & Code — Shyam Krishna Gupta | AI/ML & Software Portfolio"
+        description="Explore AI platforms, computer vision tools, enterprise software, and open-source software engineering projects built by Shyam Krishna Gupta in Nepal."
+        keywords="Shyam Krishna Gupta Projects, AI Projects Nepal, Software Engineering Portfolio Nepal, Python React Projects Nepal"
+        canonical="https://anshgupta.com.np/build"
+      />
       <div className="container-site">
         <ScrollReveal>
           <p className="text-label" style={{ marginBottom: '1.5rem' }}>Build</p>
