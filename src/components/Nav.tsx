@@ -193,7 +193,7 @@ export default function Nav() {
               style={{
                 fontFamily: 'var(--font-serif)',
                 fontSize: '2rem',
-                fontWeight: 400,
+                fontWeight: 600,
                 color: 'var(--color-text)',
                 letterSpacing: '-0.01em',
                 animationDelay: `${i * 60}ms`,

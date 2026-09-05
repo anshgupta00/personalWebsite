@@ -72,12 +72,6 @@
     font-weight: 500;
   }
 
-  /* Hide native cursor on desktop for custom cursor */
-  @media (hover: hover) and (pointer: fine) {
-    *, *::before, *::after {
-      cursor: none !important;
-    }
-  }
 
   /* Accessible focus outlines */
   :focus-visible {
@@ -206,7 +200,7 @@
   /* Nav */
   .nav-link {
     font-size: 0.8125rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.04em;
     color: var(--color-text-secondary);
     transition: color 0.2s ease;
@@ -607,5 +601,27 @@
       gap: 4rem;
     }
   }
+}
+
+/* Custom Cursor Click Ripple Animation */
+@keyframes cursorRipple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.8;
+    border: 2px solid #1A1916;
+    border-radius: 50%;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    border: 1px solid #1A1916;
+    border-radius: 50%;
+  }
+}
+
+.cursor-ripple {
+  animation: cursorRipple 0.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
 }
 
