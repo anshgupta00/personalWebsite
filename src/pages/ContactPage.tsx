@@ -71,7 +71,7 @@ const contactMethods: ContactMethod[] = [
 
 export default function ContactPage() {
   return (
-    <main id="main-content" style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
+    <main id="main-content" style={{ paddingTop: 'clamp(5rem, 15vw, 8rem)', paddingBottom: 'clamp(4rem, 10vw, 8rem)' }}>
       <SEO
         title="Contact Shyam Krishna Gupta — Hire AI Engineer & Software Consultant Nepal"
         description="Get in touch with Shyam Krishna Gupta for AI engineering roles, custom software projects, Sayapatri Group partnerships, and tech training in Nepal."
@@ -119,7 +119,7 @@ export default function ContactPage() {
             display: 'grid',
             gridTemplateColumns: '1fr',
             gap: '0',
-            maxWidth: '640px',
+            maxWidth: '100%',
           }}
         >
           {contactMethods.map((method, i) => (
@@ -158,7 +158,7 @@ export default function ContactPage() {
                   <p style={{ fontSize: '0.6875rem', fontFamily: 'var(--font-mono)', color: 'var(--color-text-muted)', letterSpacing: '0.08em', marginBottom: '0.15rem' }}>
                     {method.label}
                   </p>
-                  <p style={{ fontSize: '0.9375rem', fontWeight: 400 }}>
+                  <p style={{ fontSize: '0.9375rem', fontWeight: 400, wordBreak: 'break-all', overflowWrap: 'anywhere' }}>
                     {method.value}
                   </p>
                 </div>
