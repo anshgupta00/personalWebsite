@@ -428,8 +428,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: flex-start;
+    gap: 1.75rem;
+    padding: 5rem 2rem 2rem;
+    overflow-y: auto;
     animation: fadeIn 0.2s ease;
   }
 
